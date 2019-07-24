@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExternalActivity">
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:id="@+id/textBacaEx"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linearBtnEx"
+        android:text="Hasil baca file"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:id="@+id/linearBtnEx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Buat File"
+            android:onClick="btn_buatFileEx"
+            android:id="@+id/btn_buatFileEx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="btn_ubahFileEx"
+            android:id="@+id/btn_ubahFileEx"
+            android:text="Ubah File"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="btn_bacaFileEx"
+            android:id="@+id/btn_bacaFileEx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baca File" />
+        <Button
+            android:onClick="btn_hapusFileEx"
+            android:id="@+id/btn_hapusFileEx"
+            android:text="Haspus File"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

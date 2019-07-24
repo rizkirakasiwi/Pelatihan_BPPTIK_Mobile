@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="24dp"
+        android:id="@+id/input"
+        android:layout_marginRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_masukanNama"
+            android:hint="Masukan Nama"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_marginLeft="24dp"
+       android:layout_marginRight="24dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           app:layout_constraintLeft_toLeftOf="parent"
+           android:layout_marginLeft="6dp"
+           android:textColor="@color/colorPrimary"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           android:text="Tampilkan Nama"
+           android:id="@+id/txt_tampilNama"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <Button
+           android:id="@+id/btn_proses"
+           android:onClick="btn_proses"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           android:text="Tampilkan"
+           android:layout_marginLeft="24dp"
+           android:layout_gravity="right"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

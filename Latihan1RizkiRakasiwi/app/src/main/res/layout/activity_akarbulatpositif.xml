@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".akarbulatpositif">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_gravity="left|center"
+            android:onClick="backMencariakarbulatpositif"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:text="Mencari Akar bulat positif"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="8dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_masukanAngkaBP"
+                android:hint="Masukan Angka"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btn_prosesGG"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Proses"
+            android:onClick="prosesHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_outputAB"
+            android:textColor="#000"
+            android:text="Output : -"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
